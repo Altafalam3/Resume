@@ -11,6 +11,8 @@
 
 \documentclass[letterpaper,11pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -132,6 +134,9 @@
 %   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
 % \end{tabular*}
 
+
+\begin{tabular}{p{0.8\textwidth}p{0.2\textwidth}}
+\raggedright
 \begin{center}
     {\huge \scshape Altaf Alam} \\ 
     \vspace{4pt}
@@ -139,11 +144,14 @@
     \vspace{4pt}
     \small
     \faGithub \href{https://github.com/Altafalam3}{\raisebox{-0.2\height}\ github.com/Altafalam3} ~
-    \faLinkedin \href{https://linkedin.com/in/altaf-alam-432849234}{\raisebox{-0.2\height}\ linkedin.com/in/AltafAlam} ~
-    \faEnvelope \href{mailto:contact@altaf.alam0032@gmail.com}{\raisebox{-0.2\height}\  altaf.alam0032@gmail.com}
-    \vspace{1pt}
+    \faLinkedin \href{https://linkedin.com/in/altaf-alam-432849234}{\raisebox{-0.2\height}\ linkedin.com/AltafAlam} ~
+    \faEnvelope \href{mailto:contact@altaf.alam0032@gmail.com}{\raisebox{-0.2\height}\  altaf.alam0032@gmail.com} ~
+    \faGlobe \href{https://altafalam3.netlify.app/}{\raisebox{-0.2\height}\ Portfolio} \
 \end{center}
-
+&
+\raggedleft
+    \vspace{-5\strutbox}\includegraphics[width=2cm]{alt.jpeg}
+\end{tabular}
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -152,10 +160,9 @@
         {\item{
             \begin{tabular}{ l@{\hskip 0.2in} l@{\hskip 0.2in} l@{\hskip 0.2in} l@{\hskip 0.2in} l }
                  \textbf{Qualification} & \textbf{University} & \textbf{College} & \textbf{CGPA} & \textbf{Year} \\
-                 BE in IT & University of Mumbai & Thadomal Shahani Engineering College & 9.12/10.0 & 2025(exp)  \\
+                 BE in IT & University of Mumbai & Thadomal Shahani Engineering College & 8.89/10.0 & 2025(exp)  \\
                  HSC (12th Grade) & State Board & Guru Nanak Khalsa College & 90.83\% & 2021 \\
-                 MHT CET & Maharashtra Board & Guru Nanak Khalsa College & 97.98\% & 2021 \\
-                 10th Grade & State Board & SIWS High School & 76.8\% & 2019
+                 MHT CET & Maharashtra Board & Guru Nanak Khalsa College & 97.98\% & 2021 
             \end{tabular}
         }}
     \end{itemize}
@@ -167,11 +174,11 @@
     \vspace{-4pt}
     \begin{itemize}[leftmargin=0.2in, label={}]
         {\item{
-            \begin{tabular}{ l@{\hskip 0.7in} l }
-                 \textbf{Web}: React.js, Django, HTML, CSS, Javascript & \textbf{Languages}: Cpp, Python, Java, C  \\ 
-                 \textbf{Databases}: MySQL, SQL & 
-                 \textbf{Platforms}: GitHub, Firebase \\  
-                 \textbf{Tools}: Git, Canva & 
+            \begin{tabular}{ l@{\hskip 0.1in} l }
+                 \textbf{Web}: React.js, Express.js, HTML, CSS, Flask, Django, Javascript, Next.js \\ \textbf{Languages}: Cpp, Python, Java, C  &
+                 \textbf{Databases}: MongoDB, MySQL \\
+                 \textbf{Platforms}: GitHub, Firebase &  
+                 \textbf{Tools}: Git, Canva, Postman \\ 
             \end{tabular}
         }}
     \end{itemize}
@@ -182,8 +189,12 @@
     \vspace{-2pt}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {Digiidunia}{Jun 2023 -- Present}
+            {Digiidunia}{Jun 2023 -- August 2023}
             {Web Developer Intern}{}
+            \resumeItemListStart
+                \resumeItem{Involved in designing and building the client side functionalities of the website using React.js and CSS.}
+                \resumeItem{Developed the website server using Node.js and Express.js, and integrated MongoDB for database functionality.}
+            \resumeItemListEnd
         \vspace{-3pt}
     \resumeSubHeadingListEnd
 \vspace{-12pt}
@@ -193,13 +204,6 @@
 \section{Projects}
     \vspace{-8.5pt}
     \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\textbf{\normalsize{Portfolio Website}} $|$ \emph{React.js, CSS}}\
-            \resumeItemListStart
-                \resumeItem{A personal portfolio website for showcasing collection of my skills, works, including projects.}
-                \resumeItem{\href{https://github.com/Altafalam3/Portfolio-Website}{GitHub} $|$ \href{https://altafalam3.github.io/Portfolio-Website/}{Web app}}
-            \resumeItemListEnd
-        \vspace{-15pt}
 
         \resumeProjectHeading
             {\textbf{\normalsize{EcoSavvy}} $|$ \emph{React.js, CSS (Tailwind),  CNN (ML Model), Django, Mysql }}\
@@ -207,39 +211,41 @@
                 \resumeItem{EcoSavvy uses computer vision to enable efficient waste management and recycling practices.}
                 \resumeItem{It is based on ML model built using CNN which segregates waste into 11 different classes.}
                 \resumeItem{It is trained over 8000 data samples to segregate the waste in corresponding class. }
-                \resumeItem{\href{https://github.com/Altafalam3/EcoSavvy}{GitHub}}
+                \resumeItem{\href{https://github.com/Altafalam3/EcoSavvy}{GitHub} $|$ \href{https://github.com/Altafalam3/EcoSavvy/blob/main/README.md}{Demo}}
             \resumeItemListEnd
         \vspace{-15pt}
 
         \resumeProjectHeading
-            {\textbf{\normalsize{No Spam}} $|$ \emph{Python, ML, Pickle, Pandas, Streamlit}}\
+            {\textbf{\normalsize{SmartLegalX}} $|$ \emph{React.js, CSS, Flask, Express.js, Node.js, Llama2 7b, t5 model, MongoDB}}\
+            \resumeItemListStart                
+                \resumeItem{Developed a chatbot for instant legal document queries, integrated with WhatsApp for accessibility and marketing.}
+                \resumeItem{Implemented a user-friendly form based system for generating legal documents, enhancing accessibility.}
+                \resumeItem{Users receive a summarized version of the legal document for simplified understanding for the uploaded PDF, along with multilingual support and access to a resource hub.}
+                \resumeItem{\href{https://github.com/Altafalam3/SmartLegalX}{GitHub} $|$ \href{https://github.com/Altafalam3/SmartLegalX/blob/main/README.md}{Demo}}
+            \resumeItemListEnd
+        \vspace{-15pt}
+        
+        \resumeProjectHeading
+            {\textbf{\normalsize{NutriSure}} $|$ \emph{React Native, CSS, Flask, Transformers, MongoDB}}\
             \resumeItemListStart
-                \resumeItem{NO SPAM is an advanced machine learning-based Spam-Sms-Classifier tool that accurately categorizes text messages as spam or not spam.}
-                \resumeItem{\href{https://github.com/Altafalam3/NO-SPAM}{GitHub}}
+                \resumeItem{NutriSure instantly identifies allergens, dietary adherence, and religious considerations when users scan a product.}
+                \resumeItem{Utilize ML-powered recipe generator aligned with dietary preferences, Community Engagement, Store Locator.}
+                \resumeItem{\href{https://github.com/Altafalam3/NutriSure}{GitHub} $|$ \href{https://github.com/Altafalam3/NutriSure/blob/main/README.md}{Demo}}
             \resumeItemListEnd
         \vspace{-15pt}
 
-        \resumeProjectHeading
-            {\textbf{\normalsize{Synopsize}} $|$ \emph{Python, Custom Tkinter}}\
-            \resumeItemListStart
-                \resumeItem{Synopsize is a desktop application that serves as a meeting summarizer.}
-                \resumeItem{It can summarize audio or text files, as well as provide a brief summary of live recordings from meetings.}
-                \resumeItem{The summary text is formatted well and includes accurate summaries to make it easy to understand.}
-                \resumeItem{\href{https://github.com/Altafalam3/Synopsize}{GitHub}}
-            \resumeItemListEnd
-        \vspace{-15pt}
 
         \resumeProjectHeading
-            {\textbf{\normalsize{Swaniti}} $|$ \emph{HTML,CSS (Tailwind), JS}}\
+            {\textbf{\normalsize{PhishNet}} $|$ \emph{React.js, CSS, Flask, Express.js, MongoDB, Python}}\
             \resumeItemListStart
-                \resumeItem{An easy-to-use website for underprivileged womens to get job ready skills and job opportunities.}
-                \resumeItem{Features are chatbot which helps in service and a todo list to help user track of their completed skill courses.}
-                \resumeItem{It features multi-language using Google Translation API helping all types of communities.}
-                \resumeItem{\href{https://github.com/Altafalam3/Swaniti-PROJECT}{GitHub} $|$ \href{https://altafalam3.github.io/Swaniti-PROJECT/LP/index.html}{Web app}}
+                \resumeItem{PhishNet automates the phishing domain detection and calculates probability scores based on website similarity.}
+                \resumeItem{It implements Typo Squatting and utilizes a Chrome Extension to detect whether the current domain is safe or not.}
+                \resumeItem{\href{https://github.com/Altafalam3/PhishNet}{GitHub} $|$ \href{https://github.com/Altafalam3/PhishNet/blob/main/README.md}{Demo}}
             \resumeItemListEnd
         
     \resumeSubHeadingListEnd
 \vspace{-12pt}
+
 
 
 %-----------EXTRACURRICULAR ACTIVITY-----------
@@ -247,9 +253,11 @@
     \vspace{-2pt}
     
         \resumeItemListStart
-            \resumeItem{Won 1st prize trophy in THE GREAT ESCAPE, which consisted of multiple rounds and levels, among more than 50 teams in 2023.}
+            \resumeItem{Secured 1st position in the Vega Hackathon among 55+ competing teams conducted by SAKEC in 2024.}
+            \resumeItem{Secured 1st Runner-Up position in the Crescendo Hackathon among 60+ competing teams conducted by CRCE in 2024.}
+            \resumeItem{Secured 2nd Runner-Up position in the RUBIX'24 Hackathon among 70+ competing teams conducted by CSI in 2024.}
+            \resumeItem{Won 1st prize trophy in THE GREAT ESCAPE and DESICIVE DEFRAUDERS, which consisted of multiple rounds and levels, among more than 50 teams in 2023.}
             \resumeItem{Played Chess at DSO LEVEL in 2019 and 2020.}
-            \resumeItem{Won 1st prize in the DESICIVE DEFRAUDERS event conducted in 2023.}
         \resumeItemListEnd
         \vspace{-6pt}
         
